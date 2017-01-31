@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,x,count,p=1;
+	cout<<"Enter till number:\n";
+	cin>>x;
+	for(int j=4;j<=x;j++)
+	{
+		count=0;
+	for(int i=2;i<=j/2;i++)
+	{
+		if(j%i==0)
+		{
+			count++;
+		}
+		
+	}
+	if(count>0)
+	{
+	    a=j;
+	    p=p*a;
+	}
+	}
+	cout<<p;
+    return 0;
+}
